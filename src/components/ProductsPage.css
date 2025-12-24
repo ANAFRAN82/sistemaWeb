@@ -39,9 +39,9 @@ HEADER Y TÍTULO
 }
 
 .main-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    color: var(--secondary-blue);
+    color: #0C0C8E;
     margin-bottom: 1rem;
 }
 
@@ -127,7 +127,7 @@ CONTENIDO DE TARJETA
     color: var(--text-color);
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
 
 }
 
@@ -144,7 +144,7 @@ BOTÓN
     font-weight: 600;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.15rem;
     display: flex;
     align-items: center;
     justify-content: center;

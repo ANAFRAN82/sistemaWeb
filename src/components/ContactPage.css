@@ -47,7 +47,7 @@ TÍTULOS
 
 .contact-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #0C0C8E;
   font-family: "Oswald", sans-serif;
@@ -117,7 +117,7 @@ CAMPOS
 }
 
 .form-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -130,6 +130,7 @@ CAMPOS
   border: 2px solid #AAC4D6;
   border-radius: 0.75rem;
   transition: border-color 0.2s ease;
+  font-size: 1rem;
 }
 
 .form-input:focus,
@@ -140,7 +141,8 @@ CAMPOS
 }
 
 .form-textarea {
-  resize: none;
+  font-size: 1rem;
+  
 }
 
 /* =========================
@@ -152,7 +154,7 @@ BOTÓN
   color: #fff;
   padding: 1rem 0;
   border-radius: 0.75rem;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-family: "Oswald", sans-serif;
   display: flex;
   align-items: center;
@@ -202,23 +204,29 @@ SECCIÓN UBICACIÓN
 
 .location-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
 }
 
-/* MAPA */
+
+/* MAPA FIX DEFINITIVO */
 .map-container {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  min-height: 300px;
+  height: 100%;
+  min-height: 100%;
   position: relative;
   overflow: hidden;
+  background: #e5e5e5; /* evita blanco mientras carga */
 }
 
 .map-container iframe {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
+
 
 /* INFO */
 .location-info {
@@ -242,13 +250,13 @@ SECCIÓN UBICACIÓN
 }
 
 .location-item-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #fff;
 }
 
 .location-item-text {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   color: #fff;
 }
 .location-info-title{
@@ -294,8 +302,7 @@ RESPONSIVE
   /* FIX MAPA MÓVIL */
   .map-container {
     height: 260px;
-    min-height: auto;
-    aspect-ratio: unset;
+    
   }
 
   .location-grid {
@@ -318,13 +325,4 @@ RESPONSIVE
   }
 }
 
-/* 🖥️ PANTALLAS GRANDES */
-@media (min-width: 1400px) {
-  .contact-title {
-    font-size: 3.4rem;
-  }
-
-  .location-info {
-    padding: 3rem;
-  }
-}
+ 

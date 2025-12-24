@@ -123,13 +123,13 @@ SECCIÓN SERVICIOS
 }
 
 .service-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .service-description {
-    font-size: 1.125rem;
+    font-size: 1.225rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     white-space: pre-line;
@@ -163,7 +163,7 @@ SECCIÓN LOGROS
 ========================= */
 .achievements-title {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--text-heading);
     margin-bottom: 3rem;
@@ -221,7 +221,7 @@ SECCIÓN LOGROS
 }
 
 .achievement-count {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: .5rem;
@@ -229,6 +229,7 @@ SECCIÓN LOGROS
 
 .achievement-description {
     color: var(--text-muted);
+    font-size: 1.225rem;
 }
 
 /* =========================
